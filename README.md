@@ -4,6 +4,6 @@ Installation:
 - Download
 - Open Google Chrome
 - Go to: More Tools -> Extensions
-- Load unpackedß
+- Load unpacked
 - Select Folder
 - Done! You just made an important thing to make your life less miserable.
