@@ -1,0 +1,29 @@
+{
+  "update_url": "https://patrick-vogt.com",
+  "name": "No-Covid",
+  "description": "Blocks annoying content about Covid",
+  "author": "Patrick Vogt",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "permissions": ["*://*.facebook.com/*", "activeTab", "storage"],
+  "browser_action": {
+    "default_icon": "images/icon48.png",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "background": {
+    "scripts": ["js/background.js"],
+    "persistent": true
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.facebook.com/*"],
+      "run_at": "document_start",
+      "js": ["js/filters.js"]
+    }
+  ]
+}
